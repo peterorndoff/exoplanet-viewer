@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Peter Orndoff # the website title (if blank, full name will be used instead)
-first_name: Peter
+title: Exo-Viewer # the website title (if blank, full name will be used instead)
+first_name: 
 middle_name:
-last_name: Orndoff
+last_name: 
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 
