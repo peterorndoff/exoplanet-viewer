@@ -1,0 +1,51 @@
+---
+layout: default
+pagination:
+  enabled: true
+  collection: posts
+  permalink: /page/:num/
+  per_page: 3
+  sort_field: date
+  sort_reverse: false
+  trail:
+    before: 1 # The number of links before the current page
+    after: 3  # The number of links after the current page
+---
+
+<div class="main">
+    
+    <!--
+    <div class="image">
+
+        <img class="img-fluid z-depth-1 rounded" src="assets\img\Earth from Mars.jpg">
+
+        <div class="clearfix">
+            {{ content }}
+        </div>
+    </div>
+    -->
+
+    <div class="buttons">
+
+        <div class="clearfix">
+            {{ content }}
+        </div>
+
+        <h1>{{site.my_articles}}</h1>
+        <h1>{{site.my_projects}}</h1>
+        <h1>{{site.my_info}}</h1>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
