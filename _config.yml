@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Exo-Viewer # the website title (if blank, full name will be used instead)
-first_name: 
+title: ExoPlanet Viewer # the website title (if blank, full name will be used instead)
+first_name: Peter
 middle_name:
-last_name: 
+last_name: Orndoff
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 
@@ -72,7 +72,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: <font size="8"> Think. </font>  # your blog must have a name for it to show up in the nav bar
+blog_name:  # your blog must have a name for it to show up in the nav bar
 my_articles: <a href="/articles/">Articles</a>
 my_projects: <a href="/projects/">Projects</a>
 my_info: <a href="/about/">About</a>
