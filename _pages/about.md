@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: _exoviewer\exo_viewer.html
 title: Think.
 permalink: /
 description:
@@ -18,6 +18,4 @@ news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-
-<font size="1.5"><p>Per aspera ad astra</p>
 
