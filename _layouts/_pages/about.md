@@ -1,5 +1,5 @@
 ---
-layout: _exoviewer\exo_viewer.html
+layout: exo_viewer
 title: Think.
 permalink: /
 description:
