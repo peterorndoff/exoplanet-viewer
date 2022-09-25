@@ -1,0 +1,307 @@
+div.exo_system_container #text_container #star_name {
+    position: absolute;
+    left: 8px;
+    width: 200px;
+    height: 30px;
+    bottom: 5px;
+    border: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-family:monospace;
+    text-align: center;
+    cursor: default;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+div.exo_system_container #text_container #planet_name {
+    position: absolute;
+    left: 260px;
+    width: 200px;
+    height: 30px;
+    bottom: 5px;
+    border: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: default;
+    font-style: normal;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+
+/* This implementation will have to be tied to positioning of planets via
+linear scaling algorithm. */
+
+
+/*div.exo_system_container #text_container #pl_orb_dist {
+    position: absolute;
+    left: 10px;
+    width: 250px;
+    height: 30px;
+    bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.426);
+}
+
+*/
+
+div.exo_system_container {
+    opacity: 0;
+    position: fixed;
+    width: 800px;
+    height: 150px;
+    top: 40px;
+    left: 800px;
+    border: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.119);
+}
+
+div.exo_system_container #text_container {
+    position: absolute;
+    bottom: 0px;
+    width: 800px;
+    height: 40px;
+}
+
+div.exo_system_container #star_container {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 5px;
+    left: 25px;
+}
+
+div.exo_system_container #planet_container {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 5px;
+    left: 300px;
+
+}
+
+
+.top-bar-container {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    opacity: 0.5;
+    z-index: 50;
+    cursor: default;
+}
+
+
+.top-bar {
+    opacity: 0.8;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 55;
+}
+
+.top-bar-container #title {
+    position: absolute;
+    width: fit-content;
+    height: 20px;
+    top: 8px;
+    left: 70px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-family:monospace;
+    cursor: default;
+    font-style: normal;
+}
+
+.top-bar-container #about {
+    font-family:monospace;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    width: fit-content;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    z-index: 100;    
+    transition: ease-in 0.5s;
+}
+
+.top-bar-container #about:hover{
+    transition: ease-in 0.5s;
+    color: rgb(0, 208, 255);
+}
+
+.top-bar-container #about:hover #about-dropdown {
+    display: block;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 200;
+    color: white;
+
+}
+
+.top-bar-container #about #about-dropdown {
+    display: none;
+    position: absolute;
+    top: 25px;
+    width: 250px;
+    height: fit-content;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    z-index: 50;
+}
+
+.top-bar-container #search-box {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    top: 5px;
+    right: 80px;
+    opacity: 0;
+}
+
+input {
+    font-family:monospace;
+    text-align: 50px;
+    text-indent:50px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#search-dropdown-container{
+    display: none;
+    overflow: scroll;
+    position: absolute;
+    width: 250px;
+    height: 700px;
+    right: -10px;
+    top: 35px;
+    border: 5px;
+    border-radius: 5px;
+    text-align: left;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+}
+
+.bottom-bar-container {
+    cursor:default;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0%;
+    left: 0%;
+    opacity: 0.5;
+    z-index: 50;
+}
+
+.footer-bar {
+    opacity: 0.8;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    background-color: black;
+}
+
+#info {
+    color: white;
+    font-style: normal;
+    font-size: smaller;
+    text-indent: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 18px;
+}
+
+.svg-container {
+    z-index: 25;
+}
+
+a {
+    color:rgb(255, 255, 255)
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    background-image: url("Hubble Legacy View.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    background-attachment: fixed;
+}
+
+g {
+    fill:rgba(83, 11, 90, 0.637);
+}
+
+g:hover {
+    fill:rgba(17, 156, 211, 0.726)   
+}
+
+
+div.planet_tooltip {
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    top: 15%;
+    left: 75%;
+    text-align: right;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.148);
+    opacity: 0.8;
+    color: #f9f9f9;
+    border: 5px;
+    border-radius: 10px;
+}
+
+div.planet_tooltip #exo_viewer {
+    position: absolute;
+    width: 225px;
+    height: 200px;
+}
+
+div.planet_tooltip #planet_name {
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    top: 200px;
+    left: 25px;
+    text-align: center;
+    border: 5px;
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; 
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+}
+
+div.planet_tooltip #info_box {
+    position: absolute;
+    width: 250px;
+    height: 170px;
+    left: 0px;
+    top: 250px;
+    text-align: left;
+    text-indent: 5px;
+    border: 5px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+h1 {
+    font-size: 14px;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; 
+    font-family:'Courier New', Courier, monospace;
+    outline-width: 5px;
+    outline-color: black;
+}
